@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="color.css" />
+    <title>RGB Selector</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parameters">
+        <div class="parameter">
+          <div class="captions">Red
+            <input
+            type="number"
+            name="outputr"
+            id="outputr"
+            min="0"
+            max="255"
+            step="1"
+            value="100"
+          />
+          </div>
+          <input
+            type="range"
+            class="slider"
+            value="100"
+            name="red"
+            id="red"
+            min="0"
+            max="255"
+          />
+          
+        </div>
+
+        <div class="parameter">
+          <div class="captions">Green
+            <input
+            type="number"
+            name="outputg"
+            id="outputg"
+            min="0"
+            max="255"
+            step="1"
+            value="100"
+          />
+          </div>
+          <input
+            type="range"
+            class="slider"
+            value="100"
+            name="green"
+            id="green"
+            min="0"
+            max="255"
+          />
+          
+        </div>
+        <div class="parameter">
+          <div class="captions">Blue
+            <input
+            type="number"
+            name="outputb"
+            id="outputb"
+            min="0"
+            max="255"
+            step="1"
+            value="100"
+          />
+          </div>
+          <input
+            type="range"
+            class="slider"
+            value="100"
+            name="blue"
+            id="blue"
+            min="0"
+            max="255"
+          />
+          
+        </div>
+        <div class="parameter">
+          <div class="captions">Opacity
+            <input
+            type="number"
+            name="outputo"
+            id="outputo"
+            min="0"
+            max="1"
+            step="0.1"
+            value="1"
+          />
+          </div>
+          <input
+            type="range"
+            class="slider"
+            value="1"
+            name="opacity"
+            id="opacity"
+            min="0.0"
+            max="1.0"
+            step="0.01"
+          />
+         
+        </div>
+        <button id="generator">Generate Random</button>
+        <input
+          type="text"
+          name="output"
+          id="output"
+          value="rgba(100,100,100,1)"
+          readonly
+        />
+      </div>
+    </div>
+    <script src="color.js"></script>
+  </body>
+</html>
